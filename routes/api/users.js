@@ -68,6 +68,7 @@ router.post(
       jwt.sign(
         payload,
         config.get('jwtSecret'),
+        // before deployment remove two zeros from expiresIn value
         { expiresIn: 360000 },
         (err, token) => {
           if (err) throw err;
