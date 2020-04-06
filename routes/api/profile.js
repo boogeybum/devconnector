@@ -47,6 +47,9 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
+
+    
+    // lesson ch 17 (6:39)
   }
 );
 
